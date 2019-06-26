@@ -408,6 +408,23 @@ ul {
   list-style: none;
 }
 
+.widget-container-full {
+  width: 95vw;
+}
+@media (min-width: 1024px) {
+  .widget-container-full {
+    width: 90vw;
+  }
+}
+.widget-container-half {
+  width: 95vw;
+}
+@media (min-width: 1024px) {
+  .widget-container-half {
+    width: 45vw;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
