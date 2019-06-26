@@ -1,210 +1,257 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebApp Dashboard</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
 
-    <body>
-        <header>
-            <h1>YourApp&trade;</h1>
-            <div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
+    <header>
+        <h1>YourApp&trade;</h1>
+        <div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+                style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #FFFFFF;
+                    }
+                </style>
+                <g id="_x36__6_">
+                    <g>
+                        <path class="st0"
+                            d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                           c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z" />
+                    </g>
+                </g>
+            </svg>
+
+            <div id="notifications">
+                <!-- js will show and hide notifications here -->
             </div>
-            <img src="" alt="">
-            <h3>Jovy Ong</h3>
-        </header>
+        </div>
+        <img src="images/user.jpg" alt="user avatar">
+        <h3>Jovy Ong</h3>
+    </header>
 
-        <nav>
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </nav>
+    <nav>
+        <a href="">
+            <img src="icons/icon-dashboard.svg" alt="icon dashboard">
+        </a>
+        <a href="">
+            <img src="icons/icon-members.svg" alt="icon members">
+        </a>
+        <a href="">
+            <img src="icons/icon-visits.svg" alt="icon visits">
+        </a>
+        <a href="">
+            <img src="icons/icon-settings.svg" alt="icon settings">
+        </a>
+    </nav>
 
-        <main>
-            <!-- This is for the dashboard tab row -->
-            <div class="main-header">
-                <h2 class="headline">Dashboard</h2>
-            
-                <div class="main-header-search">
-                    <input type="search" placeholder="Search..." />
+    <main>
+        <!-- This is for the dashboard tab row -->
+        <div class="main-header">
+            <h2 class="headline">Dashboard</h2>
+
+            <div class="main-header-search">
+                <input type="search" placeholder="Search..." />
+            </div>
+        </div>
+
+        <!-- This is for the alert tab row -->
+        <div class="alert" id="alert">
+            <!-- JS will insert alert here -->
+        </div>
+
+        <!-- This is for the main traffic chart section -->
+        <section class="traffic">
+            <div class="traffic-header">
+                <h3>Traffic</h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link active">Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul>
+            </div>
+
+            <div class="widget-container-full">
+                <canvas id="traffic-chart"></canvas>
+            </div>
+        </section>
+
+
+        <!-- This is for the secondary chart -->
+        <section class="daily">
+            <h3>Daily Traffic</h3>
+            <div class="widget-container-half">
+                <canvas id="daily-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- This is for the tertiary chart -->
+        <section class="mobile">
+            <h3>Mobile Users</h3>
+            <div class="widget-container-half">
+                <canvas id="mobile-users-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- This is for the social stats section -->
+        <section class="social">
+            <h3>Social Stats</h3>
+
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG here -->
+                </div>
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>10,345</p>
                 </div>
             </div>
 
-            <!-- This is for the alert tab row -->
-            <div class="alert" id="alert">
-                <!-- JS will insert alert here -->
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG here -->
+                </div>
+                <div class="social-text">
+                    <p>Facebook</p>
+                    <p>8,739</p>
+                </div>
             </div>
 
-            <!-- This is for the main traffic chart section -->
-            <section class="traffic">
-                <div class="traffic-header">
-                    <h3>Traffic</h3>
-                    <ul class="traffic-nav">
-                        <li class="traffic-nav-link">Hourly</li>
-                        <li class="traffic-nav-link">Daily</li>
-                        <li class="traffic-nav-link active">Weekly</li>
-                        <li class="traffic-nav-link">Monthly</li>
-                    </ul>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG here -->
                 </div>
-
-                <div class="widget-container-full">
-                    <canvas id="traffic-chart"></canvas>
+                <div class="social-text">
+                    <p>Google+</p>
+                    <p>2,530</p>
                 </div>
-            </section>
+            </div>
 
+        </section>
 
-            <!-- This is for the secondary chart -->
-            <section class="daily">
-                <h3>Daily Traffic</h3>
-                <div class="widget-container-half">
-                    <canvas id="daily-chart"></canvas>
+        <!-- This is for the new members section -->
+        <section class="members">
+            <h3>New Members</h3>
+
+            <div class="members-container">
+                <img src="images/member-1.jpg" alt="member 1">
+                <div class="members-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chambers80@example.com</a>
                 </div>
-            </section>
+                <p>10/15/15</p>
+            </div>
 
-            <!-- This is for the tertiary chart -->
-            <section class="mobile">
-                <h3>Mobile Users</h3>
-                <div class="widget-container-half">
-                    <canvas id="mobile-users-chart"></canvas>
+            <div class="members-container">
+                <img src="images/member-2.jpg"" alt=" member 2">
+                <div class="members-text">
+                    <p>Dale Byrd</p>
+                    <a href="#">dale.byrd52@example.com</a>
                 </div>
-            </section>
+                <p>10/15/15</p>
+            </div>
 
-            <!-- This is for the social stats section -->
-            <section class="social">
-                <h3>Social Stats</h3>
-
-                <div class="social-container">
-                    <div class="social-image">
-                        <!-- inline SVG here -->
-                    </div>
-                    <div class="social-text">
-                        <p>Twitter</p>
-                        <p>10,345</p>
-                    </div>
+            <div class="members-container">
+                <img src="images/member-3.jpg"" alt=" member 3">
+                <div class="members-text">
+                    <p>Dawn Wood</p>
+                    <a href="#">dawn.wood16@example.com</a>
                 </div>
+                <p>10/15/15</p>
+            </div>
 
-                <div class="social-container">
-                    <div class="social-image">
-                        <!-- inline SVG here -->
-                    </div>
-                    <div class="social-text">
-                        <p>Facebook</p>
-                        <p>8,739</p>
-                    </div>
+            <div class="members-container">
+                <img src="images/member-4.jpg"" alt=" member 4">
+                <div class="members-text">
+                    <p>Dan Oliver</p>
+                    <a href="#">dan.oliver82@example.com</a>
                 </div>
+                <p>10/15/15</p>
+            </div>
+        </section>
 
-                <div class="social-container">
-                    <div class="social-image">
-                        <!-- inline SVG here -->
-                    </div>
-                    <div class="social-text">
-                        <p>Google+</p>
-                        <p>2,530</p>
-                    </div>
+        <!-- This is for the recent activity section -->
+        <section class="activity">
+            <h3>Recent Activity</h3>
+
+            <div class="activity-container">
+                <img src="images/member-1.jpg" alt="member 1">
+                <div class="activity-text">
+                    <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+                    <p>4 hours ago</p>
                 </div>
+                <p>&gt;</p>
+            </div>
 
-            </section>
-
-            <!-- This is for the new members section -->
-            <section class="members">
-                <h3>New Members</h3>
-                
-                <div class="members-container">
-                    <img src="" alt="">
-                    <div class="members-text">
-                        <p>Victoria Chambers</p>
-                        <a href="#">victoria.chambers80@example.com</a>
-                    </div>
-                    <p>10/15/15</p>
+            <div class="activity-container">
+                <img src="images/member-2.jpg" alt="member 2">
+                <div class="activity-text">
+                    <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
+                    <p>5 hours ago</p>
                 </div>
+                <p>&gt;</p>
+            </div>
 
-                <div class="members-container">
-                    <img src="" alt="">
-                    <div class="members-text">
-                        <p>Dale Byrd</p>
-                        <a href="#">dale.byrd52@example.com</a>
-                    </div>
-                    <p>10/15/15</p>
+            <div class="activity-container">
+                <img src="images/member-3.jpg" alt="member 3">
+                <div class="activity-text">
+                    <p>Dawn Wood commented on Facebook's Changes for 2016</p>
+                    <p>5 hours ago</p>
                 </div>
+                <p>&gt;</p>
+            </div>
 
-                <div class="members-container">
-                    <img src="" alt="">
-                    <div class="members-text">
-                        <p>Dawn Wood</p>
-                        <a href="#">dawn.wood16@example.com</a>
-                    </div>
-                    <p>10/15/15</p>
+            <div class="activity-container">
+                <img src="images/member-4.jpg" alt="member 4">
+                <div class="activity-text">
+                    <p>Dan Oliver posted YourApp's SEO Tips</p>
+                    <p>1 day ago</p>
                 </div>
+                <p>&gt;</p>
+            </div>
 
-                <div class="members-container">
-                    <img src="" alt="">
-                    <div class="members-text">
-                        <p>Dan Oliver</p>
-                        <a href="#">dan.oliver82@example.com</a>
-                    </div>
-                    <p>10/15/15</p>
-                </div>
-            </section>
+        </section>
 
-            <!-- This is for the recent activity section -->
-            <section class="activity">
-                <h3>Recent Activity</h3>
-            
-                <div class="activity-container">
-                    <img src="" alt="">
-                    <div class="activity-text">
-                        <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-                        <p>4 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </div>
+        <!-- This is for the messaging section -->
+        <section class="message">
+            <h3>Message User</h3>
+            <form class="widget-container">
+                <input type="text" class="form-field" id="userField" placeholder="Search for user">
+                <textarea class="form-area" id="messageField" placeholder="Message for user" cols="30"
+                    rows="10"></textarea>
+                <button class="button-primary" id="send">Send</button>
+            </form>
+        </section>
 
-                <div class="activity-container">
-                    <img src="" alt="">
-                    <div class="activity-text">
-                        <p>Dale Byrd liked the post  Facebook's Changes for 2016</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </div>
+        <!-- This is for the settings section -->
+        <section class="settings">
+            <h3>Settings</h3>
 
-                <div class="activity-container">
-                    <img src="" alt="">
-                    <div class="activity-text">
-                        <p>Dawn Wood commented on Facebook's Changes for 2016</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </div>
+            <!-- custom CSS toggle code-->
+            <!-- custom CSS toggle code-->
 
-                <div class="activity-container">
-                    <img src="" alt="">
-                    <div class="activity-text">
-                        <p>Dan Oliver posted YourApp's SEO Tips</p>
-                        <p>1 day ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </div>
-            
-            </section>
+            <select class="form-field" id="timezone">
+                <option disabled selected>Select Timezone</option>
+                <option value="pacific">Pacific</option>
+                <option value="mountain">Mountain</option>
+                <option value="central">Central</option>
+                <option value="eastern">Eastern</option>
+            </select>
+            <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+            </div>
+        </section>
 
-            <!-- This is for the messaging section -->
-
-            <!-- This is for the settings section -->
-        
-        </main>
-    </body>
+    </main>
+</body>
 
 </html>
