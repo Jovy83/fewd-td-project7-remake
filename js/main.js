@@ -1,3 +1,16 @@
+// Alert banner
+const alert = $('#alert');
+// create the html for the banner
+alert.html(`
+<div class="alert-banner">
+            <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+            <p class="alert-banner-close">x</p>
+        </div>
+`)
+alert.on('click', (event) => {
+//todo: continue here
+});
+
 // ChartJS
 const trafficChartCanvas = $('#traffic-chart');
 const dailyChartCanvas = $('#daily-chart');
@@ -66,6 +79,6 @@ const mobileUsersChart = new Chart(mobileUsersChartCanvas, {
         }]
     },
     options: {
-        
+
     }
 }); 

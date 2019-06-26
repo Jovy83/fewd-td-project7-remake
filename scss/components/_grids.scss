@@ -34,22 +34,25 @@
   }
 }
 
-.traffic, .social {
-    @include media-query("desktop") {
-        grid-column: 1 / span 2;
-    }
+.traffic,
+.social {
+  @include media-query("desktop") {
+    grid-column: 1 / span 2;
+  }
 }
 
-.daily, .members, .message {
-    @include media-query("desktop") {
-        grid-column: 1 / span 1;
-    }
+.daily,
+.members,
+.message {
+  @include media-query("desktop") {
+    grid-column: 1 / span 1;
+  }
 }
 
-.mobile, .activity, .settings {
-    @include media-query("desktop") {
-        grid-column: 2 / span 1;
-    }
+.mobile,
+.activity,
+.settings {
+  @include media-query("desktop") {
+    grid-column: 2 / span 1;
+  }
 }
-
-

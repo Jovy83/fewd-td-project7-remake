@@ -1,17 +1,17 @@
 .widget-container {
-    &-full {
-        @include media-query("desktop") {
-            width: 90vw;
-        }
-
-        width: 95vw;
+  &-full {
+    @include media-query("desktop") {
+      width: 90vw;
     }
 
-    &-half {
-        @include media-query("desktop") {
-            width: 45vw;
-        }
+    width: 95vw;
+  }
 
-        width: 95vw;
+  &-half {
+    @include media-query("desktop") {
+      width: 45vw;
     }
+
+    width: 95vw;
+  }
 }

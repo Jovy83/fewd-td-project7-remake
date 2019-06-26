@@ -454,19 +454,24 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .traffic, .social {
+  .traffic,
+.social {
     grid-column: 1/span 2;
   }
 }
 
 @media (min-width: 1024px) {
-  .daily, .members, .message {
+  .daily,
+.members,
+.message {
     grid-column: 1/span 1;
   }
 }
 
 @media (min-width: 1024px) {
-  .mobile, .activity, .settings {
+  .mobile,
+.activity,
+.settings {
     grid-column: 2/span 1;
   }
 }
