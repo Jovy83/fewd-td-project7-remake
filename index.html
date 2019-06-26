@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp Dashboard</title>
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -268,7 +269,33 @@
             <h3>Settings</h3>
 
             <!-- custom CSS toggle code-->
+            <label class="switch-light switch-material" onclick="">
+                <input type="checkbox">
+            
+                <strong>
+                    Send Email Notifications
+                </strong>
+            
+                <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
             <!-- custom CSS toggle code-->
+            <label class="switch-light switch-material" onclick="">
+                <input type="checkbox">
+            
+                <strong>
+                    Set Profile to Public
+                </strong>
+            
+                <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
 
             <select class="form-field" id="timezone">
                 <option disabled selected>Select Timezone</option>
