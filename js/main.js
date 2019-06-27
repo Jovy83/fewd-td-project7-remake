@@ -113,4 +113,24 @@ const mobileUsersChart = new Chart(mobileUsersChartCanvas, {
     type: 'doughnut',
     data: mobileUsersData,
     options: mobileOptions
-}); 
+});
+
+// Messaging section
+const user = $('#userField');
+const message = $('#messageField');
+const send = $('#send');
+
+send.on('click', (event) => {
+    event.preventDefault();
+
+    // ensure user and message fields are filled out
+    if (user.value === "" && message.value === "") {
+        alert("Please fill out user and message fields before sending!");
+    } else if (user.value === "") {
+        alert("Please fill out user field before sending!");
+    } else if (message.value === "") {
+        alert("Please fill out message field before sending!");
+    } else {
+        alert(`Message successfully sent to: ${user.value}`);
+    }
+});
