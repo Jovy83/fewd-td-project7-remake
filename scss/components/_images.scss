@@ -1,0 +1,14 @@
+.img {
+    &-avatar {
+        @extend %rounded;
+        @include dimensions($size-icon, $size-icon);
+    }
+}
+
+.svg {
+    &-icon {
+        @include dimensions($size-icon, $size-icon);
+    }
+
+    // todo: next the border right or left, then the flex-spacing
+}

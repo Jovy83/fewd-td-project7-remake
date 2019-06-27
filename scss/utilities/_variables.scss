@@ -4,3 +4,22 @@ $screen-sizes: (
   "tablet": 768px,
   "desktop": 1024px
 );
+
+// Colors
+$chetwode-blue: #7479BD;
+$east-bay: #4D4D71;
+$dark-gray: #B2B2B2;
+$de-york: #83C891;
+
+$header-bg: $chetwode-blue;
+$nav-bg: $east-bay;
+$alert-banner-bg: $chetwode-blue;
+$button-primary-bg: $chetwode-blue;
+$tab-active-bg: $de-york;
+$social-div-bg: $dark-gray;
+$button-cancel-bg: $dark-gray;
+$form-element-bg: $dark-gray;
+
+// Sizes
+$size-icon: 2.5rem;
+$size-social-icon: 2rem;

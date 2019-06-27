@@ -17,7 +17,9 @@
   }
 
   &-header {
+    @include flexy('row');
     grid-area: header;
+    background-color: $header-bg;
   }
 
   &-nav {

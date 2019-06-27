@@ -1,3 +1,12 @@
+.grid-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-avatar {
+  border-radius: 50%;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -439,6 +448,7 @@ ul {
 }
 .grid-header {
   grid-area: header;
+  background-color: #7479BD;
 }
 .grid-nav {
   grid-area: nav;
@@ -474,6 +484,16 @@ ul {
 .settings {
     grid-column: 2/span 1;
   }
+}
+
+.img-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
