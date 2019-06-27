@@ -1,17 +1,17 @@
 // Alert banner
-const alert = $('#alert');
+const alertBannerDiv = $('#alert');
 // create the html for the banner
-alert.html(`
+alertBannerDiv.html(`
 <div class="alert-banner">
             <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
             <p class="alert-banner-close">x</p>
         </div>
-`)
-alert.on('click', (event) => {
+`);
+alertBannerDiv.on('click', (event) => {
     //todo: continue here
     const element = event.target;
     if (element.classList.contains("alert-banner-close")) {
-        alert.hide();
+        alertBannerDiv.hide();
     }
 });
 
