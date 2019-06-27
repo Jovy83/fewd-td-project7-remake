@@ -8,7 +8,11 @@ alert.html(`
         </div>
 `)
 alert.on('click', (event) => {
-//todo: continue here
+    //todo: continue here
+    const element = event.target;
+    if(element.classList.contains("alert-banner-close")) {
+        alert.hide();
+    }
 });
 
 // ChartJS
