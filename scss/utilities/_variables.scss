@@ -6,10 +6,10 @@ $screen-sizes: (
 );
 
 // Colors
-$chetwode-blue: #7479BD;
-$east-bay: #4D4D71;
-$dark-gray: #B2B2B2;
-$de-york: #83C891;
+$chetwode-blue: #7479bd;
+$east-bay: #4d4d71;
+$dark-gray: #b2b2b2;
+$de-york: #83c891;
 
 $header-bg: $chetwode-blue;
 $nav-bg: $east-bay;
@@ -23,3 +23,7 @@ $form-element-bg: $dark-gray;
 // Sizes
 $size-icon: 2.5rem;
 $size-social-icon: 2rem;
+
+// Font Stacks
+$font-url--google: "https://fonts.googleapis.com/css?family=Raleway:300,400,700";
+$font-family--primary: "Raleway", sans-serif;

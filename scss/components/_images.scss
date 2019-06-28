@@ -1,14 +1,19 @@
 .img {
-    &-avatar {
-        @extend %rounded;
-        @include dimensions($size-icon, $size-icon);
-    }
+  &-avatar {
+    @extend %rounded;
+    @include square-dimensions($size-icon);
+  }
 }
 
 .svg {
-    &-icon {
-        @include dimensions($size-icon, $size-icon);
+  &-notification {
+    @include media-query(desktop) {
+      border-right: 0.05rem dashed $dark-gray;
+      margin-right: 1rem;
+      padding-right: 1rem;
     }
+    @include square-dimensions($size-icon);
+  }
 
-    // todo: next the border right or left, then the flex-spacing
+  // todo: next the border right or left, then the flex-spacing
 }

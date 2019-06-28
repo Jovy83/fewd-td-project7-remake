@@ -3,6 +3,10 @@
   height: $height;
 }
 
+@mixin square-dimensions($size) {
+    @include dimensions($size, $size);
+}
+
 @mixin flexy($direction) {
   @if $direction == row {
     @extend %flex-row;
